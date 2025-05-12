@@ -8,10 +8,6 @@ load_dotenv()
 app = Flask(__name__)
 openai.api_key = os.getenv("OPENAI_API_KEY" )
 
-"""app = Flask(__name__)
-
-openai.api_key = "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"
-"""
 
 @app.route('/')
 def index():
